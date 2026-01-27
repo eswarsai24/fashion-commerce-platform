@@ -1,0 +1,44 @@
+
+  services:
+    redpanda:
+      image: docker.redpanda.com/redpandadata/redpanda:latest
+      container_name: redpanda
+      command:
+        - redpanda
+        - start
+        - --overprovisioned
+        - --smp
+        - "1"
+        - --memory
+        - "1G"
+        - --reserve-memory
+        - "0M"
+        - --node-id
+        - "0"
+        - --check=false
+        - --kafka-addr
+        - PLAINTEXT://0.0.0.0:9092
+        - --advertise-kafka-addr
+        - PLAINTEXT://localhost:9092
+      ports:
+        - "9092:9092"
+
+    catalog-service:
+      build:
+        context: ./services/catalog-service
+      environment:
+        KAFKA_BOOTSTRAP_SERVERS: redpanda:9092
+      ports:
+        - "8081:8081"
+      depends_on:
+        - redpanda
+
+    order-service:
+      build:
+        context: ./services/order-service
+      environment:
+        KAFKA_BOOTSTRAP_SERVERS: redpanda:9092
+      ports:
+        - "8082:8082"
+      depends_on:
+        - redpanda
