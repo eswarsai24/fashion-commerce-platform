@@ -1,0 +1,7 @@
+/Users/hp1/Downloads/fashion-commerce-platform/services/order-service/src/main/java/com/fashion/order/OrderServiceApplication.java
+/Users/hp1/Downloads/fashion-commerce-platform/services/order-service/src/main/java/com/fashion/order/api/OrderController.java
+/Users/hp1/Downloads/fashion-commerce-platform/services/order-service/src/main/java/com/fashion/order/api/dto/CreateOrderRequest.java
+/Users/hp1/Downloads/fashion-commerce-platform/services/order-service/src/main/java/com/fashion/order/api/dto/OrderResponse.java
+/Users/hp1/Downloads/fashion-commerce-platform/services/order-service/src/main/java/com/fashion/order/config/KafkaProducerConfig.java
+/Users/hp1/Downloads/fashion-commerce-platform/services/order-service/src/main/java/com/fashion/order/events/OrderCreatedEvent.java
+/Users/hp1/Downloads/fashion-commerce-platform/services/order-service/src/main/java/com/fashion/order/events/OrderEventsProducer.java

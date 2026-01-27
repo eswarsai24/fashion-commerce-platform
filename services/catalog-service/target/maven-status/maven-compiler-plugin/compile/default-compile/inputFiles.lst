@@ -1,0 +1,4 @@
+/Users/hp1/Downloads/fashion-commerce-platform/services/catalog-service/src/main/java/com/fashion/catalog/CatalogServiceApplication.java
+/Users/hp1/Downloads/fashion-commerce-platform/services/catalog-service/src/main/java/com/fashion/catalog/api/ProductController.java
+/Users/hp1/Downloads/fashion-commerce-platform/services/catalog-service/src/main/java/com/fashion/catalog/events/OrderCreatedEvent.java
+/Users/hp1/Downloads/fashion-commerce-platform/services/catalog-service/src/main/java/com/fashion/catalog/events/OrderEventsConsumer.java

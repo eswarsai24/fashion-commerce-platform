@@ -1,0 +1,7 @@
+com/fashion/order/events/OrderEventsProducer.class
+com/fashion/order/api/dto/OrderResponse.class
+com/fashion/order/events/OrderCreatedEvent.class
+com/fashion/order/config/KafkaProducerConfig.class
+com/fashion/order/OrderServiceApplication.class
+com/fashion/order/api/dto/CreateOrderRequest.class
+com/fashion/order/api/OrderController.class

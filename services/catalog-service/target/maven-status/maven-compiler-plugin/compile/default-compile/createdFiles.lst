@@ -1,0 +1,4 @@
+com/fashion/catalog/events/OrderEventsConsumer.class
+com/fashion/catalog/api/ProductController.class
+com/fashion/catalog/events/OrderCreatedEvent.class
+com/fashion/catalog/CatalogServiceApplication.class
