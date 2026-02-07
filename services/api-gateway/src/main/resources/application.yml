@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+
+  cloud:
+    gateway:
+      routes:
+        - id: catalog
+          uri: http://catalog-service:8081
+          predicates:
+            - Path=/products/**
+
+        - id: orders
+          uri: http://order-service:8082
+          predicates:
+            - Path=/orders/**
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
